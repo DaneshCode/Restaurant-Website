@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Plate Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preload" as="image" href="./images/restaurant-bg.jpg" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">Golden Plate</div>
+        <div class="mobile-menu-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#reservation" class="header-btn" style="color: #1a1a1a"
+            >Reserve Table</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p>Experience the finest dining in town</p>
+        <button onclick="location.href='#menu'" class="btn">
+          View Our Menu
+        </button>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <img src="./images/pasta.jpg" alt="Delicious Pasta Dish" />
+          <div class="menu-item-content">
+            <h3>Special Pasta</h3>
+            <p>Fresh homemade pasta with our special sauce</p>
+            <span class="price">$18.99</span>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img src="./images/steak.jpg" alt="Premium Steak" />
+          <div class="menu-item-content">
+            <h3>Premium Steak</h3>
+            <p>Perfectly cooked premium cut steak</p>
+            <span class="price">$29.99</span>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img src="./images/salad.png" alt="Fresh Salad" />
+          <div class="menu-item-content">
+            <h3>Fresh Salad</h3>
+            <p>Garden fresh vegetables with house dressing</p>
+            <span class="price">$12.99</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+      <div class="section-content">
+        <h2 class="section-title">Make a Reservation</h2>
+        <form class="reservation-form">
+          <div class="form-group">
+            <label for="res-name">Name</label>
+            <input type="text" id="res-name" required />
+          </div>
+          <div class="form-group">
+            <label for="res-email">Email</label>
+            <input type="email" id="res-email" required />
+          </div>
+          <div class="form-group">
+            <label for="res-date">Date</label>
+            <input type="date" id="res-date" required />
+          </div>
+          <div class="form-group">
+            <label for="res-time">Time</label>
+            <input type="time" id="res-time" required />
+          </div>
+          <div class="form-group">
+            <label for="res-guests">Number of Guests</label>
+            <select id="res-guests" required>
+              <option value="">Select number of guests</option>
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+              <option value="5">5 People</option>
+              <option value="6">6+ People</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Reserve Table</button>
+        </form>
+      </div>
+    </section>
+    <section class="about reveal" id="about">
+      <div class="section-content">
+        <h2 class="section-title">Our Story</h2>
+        <p>
+          Founded in 2010, Golden Plate has been serving exceptional cuisine to
+          our valued guests for over a decade. Our commitment to quality
+          ingredients and outstanding service has made us a favorite dining
+          destination.
+        </p>
+        <p>
+          Our expert chefs combine traditional techniques with modern innovation
+          to create unforgettable dining experiences.
+        </p>
+      </div>
+    </section>
+    <section class="contact reveal" id="contact">
+      <div class="section-content">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Location</h3>
+            <p>123 Dining Street<br />Foodville, FC 12345</p>
+            <h3>Hours</h3>
+            <p>Mon-Thu: 11am-10pm<br />Fri-Sun: 11am-11pm</p>
+            <h3>Contact</h3>
+            <p>Phone: (555) 123-4567<br />Email: info@goldenplate.com</p>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Golden Plate</h3>
+          <p>
+            Experience the finest dining with our carefully crafted dishes and
+            exceptional service.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <p><a href="#home">Home</a></p>
+          <p><a href="#menu">Menu</a></p>
+          <p><a href="#about">About</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>123 Dining Street</p>
+          <p>Foodville, FC 12345</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Email: info@goldenplate.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i> </a>
+            <a href="#"><i class="fab fa-instagram"></i> </a>
+            <a href="#"><i class="fab fa-twitter"></i> </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Golden Plate. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
