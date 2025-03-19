@@ -46,7 +46,7 @@ A modern, elegant restaurant website built with HTML, CSS, and JavaScript.
 
 ## 💻 Live Demo
 
-You can view the live demo of the calculator by clicking the link below:
+You can view the live demo of the Restaurant Website by clicking the link below:
 
 <a href="https://daneshcode.github.io/Restaurant-Website/" target="_blank">🔗 Open the Restaurant Website</a>
 
