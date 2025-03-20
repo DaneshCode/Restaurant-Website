@@ -433,3 +433,23 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.made {
+  padding: 2rem 0 0 0;
+  text-align: center;
+}
+.made a > i {
+  font-size: x-large;
+}
+
+.made a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem;
+}
+
+.made a:hover {
+  color: #4f51e5;
+  text-decoration: underline;
+}
